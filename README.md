@@ -10,7 +10,7 @@
 
 1. Import project as Maven project
 2. Run application as Spring Boot Application
-
+3. Run following test to observer instances. Also, Observe log to see different instance of singleton for different containers.
 
 Test results Exmaple:
 
