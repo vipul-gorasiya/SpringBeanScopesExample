@@ -62,6 +62,7 @@ Test results Exmaple:
 }
 
 5. http://localhost:8080/singleton1 Request:
+
 {
     "applicationContextAwareService": "Singleton Bean : com.vipul.service.singletonwithprototype.ApplicationContextAwareService@1ecac6fe has Prototype Bean : com.vipul.service.PrototypeScopedService@5d21da03",
     "containsAppContextService": "Singleton Bean : com.vipul.service.singletonwithprototype.ContainsAppContextService@3818ee80 has Prototype Bean : com.vipul.service.PrototypeScopedService@3bf9fb3d",
@@ -70,6 +71,7 @@ Test results Exmaple:
 
 6. http://localhost:8080/singleton2 Request:
  - Note: Singleton beans are same but having differnt instances of Prototype beans than previous request.
+ 
 {
     "applicationContextAwareService": "Singleton Bean : com.vipul.service.singletonwithprototype.ApplicationContextAwareService@1ecac6fe has Prototype Bean : com.vipul.service.PrototypeScopedService@541c625d",
     "containsAppContextService": "Singleton Bean : com.vipul.service.singletonwithprototype.ContainsAppContextService@3818ee80 has Prototype Bean : com.vipul.service.PrototypeScopedService@5adb96ae",
