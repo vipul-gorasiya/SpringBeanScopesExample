@@ -14,7 +14,8 @@
 
 Test results Exmaple:
 
-http://localhost:8080/  Request1:
+1. http://localhost:8080/  Request1:
+
 {
     "requestBean": "com.vipul.service.RequestScopedService@76a69702",
     "websocketBean": null,
@@ -24,8 +25,9 @@ http://localhost:8080/  Request1:
     "applicationBean": "com.vipul.service.ApplicationScopedService@7659ed99"
 }
 
-http://localhost:8080/  Request2:
-Note: Different RequestBean. But, All other beans are same.
+2. http://localhost:8080/  Request2:
+ - Note: Different RequestBean. But, All other beans are same.
+ 
 {
     "requestBean": "com.vipul.service.RequestScopedService@1a4c3caf",
     "websocketBean": null,
@@ -35,8 +37,9 @@ Note: Different RequestBean. But, All other beans are same.
     "applicationBean": "com.vipul.service.ApplicationScopedService@7659ed99"
 }
 
-http://localhost:8080/  Reqeust3 after clearing cookie for new session:
-Note: Different requestBean and sessionBean. But, All other beans are same.
+3. http://localhost:8080/  Reqeust3 after clearing cookie for new session:
+ - Note: Different requestBean and sessionBean. But, All other beans are same.
+ 
 {
     "requestBean": "com.vipul.service.RequestScopedService@62c5a7d3",
     "websocketBean": null,
@@ -46,8 +49,9 @@ Note: Different requestBean and sessionBean. But, All other beans are same.
     "applicationBean": "com.vipul.service.ApplicationScopedService@7659ed99"
 }
 
-http://localhost:8080/anotherapi  Request4 to another controller: 
-Note: Different requestBean and prototype. But, All other beans are same.
+4. http://localhost:8080/anotherapi  Request4 to another controller: 
+ - Note: Different requestBean and prototype. But, All other beans are same.
+ 
 {
     "requestBean": "com.vipul.service.RequestScopedService@79f80a60",
     "websocketBean": null,
@@ -57,14 +61,16 @@ Note: Different requestBean and prototype. But, All other beans are same.
     "applicationBean": "com.vipul.service.ApplicationScopedService@7659ed99"
 }
 
-http://localhost:8080/singleton1 Request:
+5. http://localhost:8080/singleton1 Request:
+
 {
     "applicationContextAwareService": "Singleton Bean : com.vipul.service.singletonwithprototype.ApplicationContextAwareService@1ecac6fe has Prototype Bean : com.vipul.service.PrototypeScopedService@5d21da03",
     "containsAppContextService": "Singleton Bean : com.vipul.service.singletonwithprototype.ContainsAppContextService@3818ee80 has Prototype Bean : com.vipul.service.PrototypeScopedService@3bf9fb3d",
     "scopedProxyExampleService": "Singleton Bean : com.vipul.service.singletonwithprototype.ScopedProxyExampleService@73cc378a has Prototype Bean : com.vipul.service.singletonwithprototype.PrototypeScopedService2@15b1fdb5"
 }
 
-http://localhost:8080/singleton2 Request:
+6. http://localhost:8080/singleton2 Request:
+
 {
     "applicationContextAwareService": "Singleton Bean : com.vipul.service.singletonwithprototype.ApplicationContextAwareService@1ecac6fe has Prototype Bean : com.vipul.service.PrototypeScopedService@541c625d",
     "containsAppContextService": "Singleton Bean : com.vipul.service.singletonwithprototype.ContainsAppContextService@3818ee80 has Prototype Bean : com.vipul.service.PrototypeScopedService@5adb96ae",
